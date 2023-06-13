@@ -144,7 +144,7 @@ If you want to use a Cassandra cluster as the general database for your DMS (i.e
 
      - **listen_on_broadcast_address**: Set this to *true*.
 
-     - **rpc_address**: Set this to *0.0.0.0*.
+     - **rpc_address**: Set this to *0.0.0.0*
 
      - **broadcast_rpc_address**: The IP address of the node.
 
