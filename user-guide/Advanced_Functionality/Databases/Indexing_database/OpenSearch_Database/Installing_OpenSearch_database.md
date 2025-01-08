@@ -214,6 +214,7 @@ plugins.security.disabled: false
 plugins.security.ssl.transport.keystore_type: PKCS12
 plugins.security.ssl.transport.keystore_filepath: /etc/opensearch/cert/FQDNOfYourNode-node-keystore.p12
 plugins.security.ssl.transport.keystore_password: ReplaceMeByGeneratedPasswordByGithubScript
+plugins.security.ssl.transport.keystore_keypassword: ReplaceMeByGeneratedPasswordByGithubScript     #This is required in 2.18.0
 plugins.security.ssl.transport.truststore_type: PKCS12
 plugins.security.ssl.transport.truststore_filepath: /etc/opensearch/cert/FQDNOfYourNode-node-keystore.p12
 plugins.security.ssl.transport.truststore_password: ReplaceMeByGeneratedPasswordByGithubScript
@@ -223,6 +224,7 @@ plugins.security.ssl.http.enabled: true
 plugins.security.ssl.http.keystore_type: PKCS12
 plugins.security.ssl.http.keystore_filepath: /etc/opensearch/cert/FQDNOfYourNode-node-keystore.p12
 plugins.security.ssl.http.keystore_password: ReplaceMeByGeneratedPasswordByGithubScript
+plugins.security.ssl.http.keystore_keypassword: ReplaceMeByGeneratedPasswordByGithubScript     #This is required in 2.18.0
 plugins.security.ssl.http.truststore_type: PKCS12
 plugins.security.ssl.http.truststore_filepath: /etc/opensearch/cert/FQDNOfYourNode-node-keystore.p12
 plugins.security.ssl.http.truststore_password: ReplaceMeByGeneratedPasswordByGithubScript
