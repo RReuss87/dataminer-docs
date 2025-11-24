@@ -23,6 +23,7 @@ You can follow the steps below or watch this short video, which shows you how to
 >
 > - **Avoid using duplicates of existing VMs** to install a new DataMiner machine. Using cloned VMs can cause certain configurations from the previous DataMiner machine to linger and cause conflicts in the system.
 > - If you do not want to do a default installation, but you want to restore a **backup**, create a **Failover** Agent to pair with an existing Agent, or do an **offline** installation, you will need to follow a **different procedure** than shown in the video above. Please read the instructions below carefully to make sure you follow the correct procedure.
+> - Installs BrokerGateway by default, when joining this new agent to an existing cluster please ensure you are already running BrokerGateway. If not, upgrade to BrokerGateway or downgrade to NATS/NAS using this guide. [Migrating to BrokerGateway | DataMiner Docs]([xref:Migrating to BrokerGateway | DataMiner Docs]
 
 > [!TIP]
 > By default, a DataMiner System is deployed with a **Community Edition license**. For information on pricing and limitations for this license, see [DataMiner Community Edition](xref:Pricing_Commercial_Models#dataminer-community-edition).
