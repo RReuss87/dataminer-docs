@@ -5,7 +5,7 @@ keywords: re-indexer
 
 # Migrating from Elasticsearch to OpenSearch
 
-From DataMiner 10.4.0 [CU2]/10.4.4 onwards<!-- RN 37994 -->, a tool is available that allows you to migrate from Elasticsearch 6.8.22 to OpenSearch 2.11.1.
+From DataMiner 10.5.9/10.6[CU0] onwards<!-- RN 43369 -->, a tool is available that allows you to migrate from Elasticsearch 6.8.22 to OpenSearch 2.11.1.
 
 To use this tool, follow the instructions below:
 
@@ -26,10 +26,11 @@ To use this tool, follow the instructions below:
 > [!CAUTION]
 > To prevent data loss, all Agents of the DMS must be stopped during this procedure. They must not be started up again until the migration is completed.
 
-> [!NOTE]
-> As of DataMiner 10.3.0 [CU16], 10.4.0 [CU4], and 10.4.7 [CU0], an improved version of the tool is available, which among others features better logging, as well as the possibility to retry failed indexes (once the cause of the failure has been resolved) using the following command-line option: `ReIndexElasticSearchIndexes.exe [-R <path to failed indexes file>]`.<!-- RN 39614 -->
-
 > [!TIP]
+> - To retry failed indexes (once the cause of the failure has been resolved) using the following command-line option: `ReIndexElasticSearchIndexes.exe [-R <path to failed indexes file>]`.<!-- RN 39614 -->
+> - If all data was deleted from the database, first initialize the repository again before you restore a snapshot.
+> - We recommend that you disable security in the .yml settings when restoring a snapshot. Once snapshot is loaded you may reenable any security plugins 
+> - It is only possible to restore indices that do not exist yet. Therefore, in most cases, you will have to delete all data from all nodes before restoring a backup.
 > See also: [Taking a snapshot of one Elasticsearch cluster and restoring it to another](xref:Taking_snapshot_Elasticsearch_cluster_and_restoring_to_different_cluster)
 
 ## Take a snapshot of the Elasticsearch 6.8.22 cluster
